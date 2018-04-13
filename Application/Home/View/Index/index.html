@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>红点e贷</title>
+		<link href="__PUBLIC__/home/css/reset.css" rel="stylesheet" />
+		<link href="__PUBLIC__/home/css/index_style.css" rel="stylesheet" />
+		<link rel="Shortcut Icon" href="__PUBLIC__/home/img/favicon.ico">
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body style="overflow: auto;">
+		<div id="header">
+			<!--登录头部 -->
+			<include file="Pub/header"/>
+			<div id="f_banner">
+				<div class="banner" id="banner">
+					<a href="" class="d1" style="background:url(__PUBLIC__/home/img/banner_bj01.jpg) center no-repeat; background-size:auto 100%;z-index:1;"></a>
+					<a href="" class="d1" style="background:url(__PUBLIC__/home/img/banner_02.png) center no-repeat; background-size:auto 100%;"></a>
+					<a href="" class="d1" style="background:url(__PUBLIC__/home/img/banner_03.png) center no-repeat; background-size:auto 100%;"></a>
+					<a href="" class="d1" style="background:url(__PUBLIC__/home/img/banner_04.png) center no-repeat; background-size:auto 100%;"></a>
+					<div class="d2" id="banner_id">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="gt_lt">
+						<div class="gtlt_div">
+							<p class="banner_lt">&lt;</p>
+							<p class="banner_gt">&gt;</p>
+						</div>
+					</div>
+				</div>
+				<div id="denglu">
+					<div class="denglu_right">
+						<p class="wytz">我要投资</p>
+						<p class="text">预计年化收益最高可达</p>
+						<p class="t2_img">12.2%</p>
+						<p class="mfzc"><a href="">免费注册</a></p>
+						<p class="yyzhdl"><span>已有账号,</span><a href="">登录</a></p>
+					</div>
+                	<!--
+	            	作者：707827852@qq.com
+	            	时间：2016-07-21
+	            	描述：已经登录的登录框开始
+	            	-->
+					<div class="yj_denglu">
+						<p class="xrtb"><img src="__PUBLIC__/home/img/xrtb.png" /></p>
+						<p class="text">您好，尊敬的
+							<a href="" id="username"></a>
+							<br/>欢迎来到红点e贷!</p>
+						<p class="dl_btn">
+							<a href="">我的账户</a>
+						</p>
+						<p class="yyzhdl"><span>已有账号,</span><a href="">立即登录</a></p>
+					</div>
+					<!--
+            	作者：707827852@qq.com
+            	时间：2016-07-21
+            	描述：已经登录的登录框结束
+            -->
+				</div>
+
+			</div>
+			<!--收益数据开始-->
+			<div class="sysj_wrap">
+				<ul>
+					<li class="sysj_a">
+						<em></em>
+						<p><span>143,097</span></p>
+						<p>精明的理财人已加入红点e贷</p>
+					</li>
+					<li class="sysj_b">
+						<em></em>
+						<p><span>12.2%</span></p>
+						<p>逆天收益，持续为您增加收入</p>
+					</li>
+					<li class="sysj_c">
+						<em></em>
+						<p><span>294445062<i>.00</i></span></p>
+						<p>累计投资金额</p>
+					</li>
+					<li class="sysj_d" style="width:200px;">
+						<em></em>
+						<p><span>3525434<i>.66</i></span></p>
+						<p>为用户赚取收益</p>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<!--收益数据结束-->
+			<!--收益广告开始-->
+			<div class="sy_ad_wrap">
+				<div class="sy_ad_body">
+					<ul id="shouyi">
+						<li>
+							<p class="q_img q_img01"></p>
+							<p class="title orange">小钱也有大收益</p>
+							<p class="text">· 过往年化收益<span class="orange">8.0%-12.2%</span></p>
+						</li>
+						<li>
+							<p class="q_img q_img02"></p>
+							<p class="title blue">短期长期灵活选</p>
+							<p class="text">· <span class="blue">方便快捷</span></p>
+						</li>
+						<li>
+							<p class="q_img q_img03"></p>
+							<p class="title green">风险防范有保障</p>
+							<p class="text">· 严守<span class="green">3个百分百</span></p>
+						</li>
+						<li>
+							<p class="q_img q_img04"></p>
+							<p class="title red">行业规范领头人</p>
+							<p class="text">· 行业自律倡导者<span class="red">公开透明</span></p>
+						</li>
+						<div class="clear"></div>
+					</ul>
+					<!--红点榜和收益数据-->
+					<div class="hdb_sssj_right">
+						<!--红点榜-->
+						<div class="hdb_ssj_btn" style="display:none;">
+							
+						</div>
+						<div class="hdb_list">
+							<div class="hdb_title">
+								红点榜
+							</div>
+							<ul>
+								<li class="hdb_bt">
+									<ol>
+										<li>排行</li>
+										<li>用户名</li>
+										<li>投资金额</li>
+									</ol>
+								</li>
+							</ul>
+						</div>
+						<!--收益数据-->
+						<div class="sssj" style="display:none;">
+							<div class="sssj_bt">
+								<span>时间</span>
+								<span>投资用户</span>
+								<span>投资金额(元)</span>
+							</div>
+							<div class="sssj_marquee">
+								<ul>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!--收益广告结束-->
+			<div id="content_index">
+				<div class="content_wrap">
+					<!--优选投资计划-->
+					<div class="content_banner">
+						<div class="left_img">
+							<img src="__PUBLIC__/home/img/content_banner01.png"/>
+						</div>
+						<div class="right_img">
+							<img src="__PUBLIC__/home/img/content_banner_czl.png"/>						
+						</div>
+					</div>
+					<!--H计划开始-->
+					<div class="h_plan">
+						<div class="h_plan_title">
+							<span class="h_jh">H计划</span>
+							<span class="h_lc">定期理财 分散投资</span>
+							<a href="javascript:;" class="fr">查看更多></a>
+						</div>
+						<div class="h_plan_wrap">
+							<div class="h_plan_left_div fl">
+								<p class="slogan">轻松理财<br/>稳健收益</p>
+								<p class="logo_h_plan"><img src="__PUBLIC__/home/img/h-plan-logo.png"/></p>
+								<p class="zai">债权投资区</p>
+							</div>
+							<ul class="h_plan_right_ul fr">
+								<li>
+									<a class="cover" href="javascript:;" target="_blank">
+					                    <p class="time">
+					                        <span class="month"><img src="__PUBLIC__/home/img/time-h-plan.png"><em>1个月</em></span>
+					                    </p>
+					                    <p class="rate mtop">
+					                        <span class="num"><i class="fu">5</i><em>%</em></span>
+					                        <span class="nian">预期年收益</span>
+					                    </p>
+					                    <p class="name">
+											查看详情
+					                    </p>
+					                    <div class="boxShadow"></div>
+					                </a>
+								</li>
+								<li>
+									<a class="cover" href="javascript:;" target="_blank">
+					                    <p class="time">
+					                        <span class="month"><img src="__PUBLIC__/home/img/time-h-plan.png"><em>3个月</em></span>
+					                    </p>
+					                    <p class="rate mtop">
+					                        <span class="num"><i class="fu">7.5</i><em>%</em></span>
+					                        <span class="nian">预期年收益</span>
+					                    </p>
+					                    <p class="name">
+											查看详情
+					                    </p>
+					                    <div class="boxShadow"></div>
+					                </a>
+								</li>
+								<li>
+									<a class="cover" href="javascript:;" target="_blank">
+					                    <p class="time">
+					                        <span class="month"><img src="__PUBLIC__/home/img/time-h-plan.png"><em>6个月</em></span>
+					                    </p>
+					                    <p class="rate mtop">
+					                        <span class="num"><i class="fu">9</i><em>%</em></span>
+					                        <span class="nian">预期年收益</span>
+					                    </p>
+					                    <p class="name">
+											查看详情
+					                    </p>
+					                    <div class="boxShadow"></div>
+					                </a>
+								</li>
+								<li>
+									<a class="cover" href="javascript:;" target="_blank">
+					                    <p class="time">
+					                        <span class="month"><img src="__PUBLIC__/home/img/time-h-plan.png"><em>12个月</em></span>
+					                    </p>
+					                    <p class="rate mtop">
+					                        <span class="num"><i class="fu">11.2</i><em>%</em></span>
+					                        <span class="nian">预期年收益</span>
+					                    </p>
+					                    <p class="name">
+											查看详情
+					                    </p>
+					                    <div class="boxShadow"></div>
+					                </a>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!--H计划结束-->
+					<!--散标投资-->
+					<div class="sbtz">
+						<h2 class="title">我要投资<span class="hr"></span></h2>
+						<table border="0" cellpadding="0" cellspacing="0" style="margin:0px auto;background-color:#fff;text-align:center;">
+							<tr style="height:1px;border-bottom:1px solid #c9c9cb;color:#838386;">
+								<th style="width:157px;"></th>
+								<th style="width:169px;"></th>
+								<th style="width:165px;"></th>
+								<th style="width:151px;"></th>
+								<th style="width:210px;"></th>
+								<th style="width:132px;"></th>
+							</tr>
+							<tr style="height:25px;border-top:1px solid #e8e8e8;text-align:left;">
+								<td colspan="6" style="padding:17px 0px 0px 0px;">
+									<span class="xydj_w">稳</span>
+									<span class="xydj_j">荐</span>
+									<span class="table_fs1 table_black"> 企业资金周转（合同号：201600250054）</span>
+								</td>
+							</tr>
+							<tr style="height:45px;">
+								<td>总额度  <span class="table_fs1 table_black">1900000</span>（元）</td>
+								<td>可投金额 <span class="table_fs1 table_black"> 125000</span></span>（元）</td>
+								<td>年化收益率  <span class="table_fs1 table_red">12.20%</span></td>
+								<td>投资期限  <span class="table_fs1 table_red">12</span>（月）</td>
+								<td class="jdt_1 jdt">
+									<p><span w="90"></span><b></b></p><i>99.99%</i></td>
+								<td class="table_tbbj">
+									<a href="wytz.html">投标</a>
+								</td>
+							</tr>
+							<tr style="height:25px;border-top:1px solid #e8e8e8;text-align: left;">
+								<td colspan="6" style="padding:17px 0px 0px 0px;">
+									<span class="xydj_w">稳</span>
+									<span class="xydj_j">荐</span>
+									<span class="table_fs1 table_black"> 购买电子产品及配件（合同号：201600250045）</span>
+								</td>
+							</tr>
+							<tr style="height:45px;">
+								<td>总额度  <span class="table_fs1 table_black">1900000</span>（元）</td>
+								<td>可投金额 <span class="table_fs1 table_black"> 125000</span></span>（元）</td>
+								<td>年化收益率  <span class="table_fs1 table_red">12.20%</span></td>
+								<td>投资期限  <span class="table_fs1 table_red">12</span>（月）</td>
+								<td class="jdt_1 jdt">
+									<p><span w="90"></span><b></b></p><i>99.99%</i></td>
+								<td class="table_tbbj">
+									<a href="wytz.html">投标</a>
+								</td>
+							</tr>
+							<tr style="height:25px;border-top:1px solid #e8e8e8;text-align: left;">
+								<td colspan="6" style="padding:17px 0px 0px 0px;">
+									<span class="xydj_w">稳</span>
+									<span class="xydj_j">荐</span>
+									<span class="table_fs1 table_black"> 资金周转（合同号：201600250045）</span>
+								</td>
+							</tr>
+							<tr style="height:45px;">
+								<td>总额度  <span class="table_fs1 table_black">1900000</span>（元）</td>
+								<td>可投金额 <span class="table_fs1 table_black"> 125000</span></span>（元）</td>
+								<td>年化收益率  <span class="table_fs1 table_red">12.20%</span></td>
+								<td>投资期限  <span class="table_fs1 table_red">12</span>（月）</td>
+								<td class="jdt_1 jdt">
+									<p><span w="90"></span><b></b></p><i>99.99%</i></td>
+								<td class="table_tbbj">
+									<a href="wytz.html">投标</a>
+								</td>
+							</tr>
+						</table>
+						<p class="djgdlc">
+							<a href="">点击更多>></a>
+						</p>
+					</div>
+					<div class="xtmt">
+						<div class="xtgg">
+							<h3>系统公告<span><a href="">更多></a></span></h3>
+							<ul>
+								<li>
+									<a href="">关于运营主体名称变更的公告 </a><span>2016-03-31 </span></li>
+								<li>
+									<a href="">身份拍照验证策略升级公告</a><span>2016-01-01</span></li>
+								<li>
+									<a href="">关于12月7日凌晨建行核心业务系... </a><span>2016-01-01</span></li>
+							</ul>
+						</div>
+						<div class="mtbd">
+							<h3>媒体报道<span><a href="">更多></a></span></h3>
+							<ul>
+								<li>
+									<a href="">江苏红点惠中投资管理有限公司与江苏永润律... </a><span>2016-03-31</span></li>
+								<li>
+									<a href="">江苏红点惠中投资管理有限公司与江苏永润律... </a><span>2016-01-01</span></li>
+								<li>
+									<a href="">江苏红点惠中投资管理有限公司与江苏永润律... </a><span>2015-12-28</span></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="hzjg">
+						<h3>合作机构</h3>
+						<ul>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_cjw.png"></a>
+							</li>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_clo.png"></a>
+							</li>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_jsybl.png"></a>
+							</li>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_njcb.png"></a>
+							</li>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_xhrb.png"></a>
+							</li>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_yszf.png"></a>
+							</li>
+							<li>
+								<a href=""><img src="__PUBLIC__/home/img/hzjg_yzwb.png"></a>
+							</li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--底部-->
+			<include file="Pub/footer"/>
+			<script src="__PUBLIC__/home/js/scroll.js"></script>
+			<script src="__PUBLIC__/home/js/index_js.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					//判断登录框是否显示隐藏
+					function denglu() {
+						var a = 1;
+						if(a == 1) {
+							$('#denglu div').first().addClass('dl_xs').siblings().addClass('dl_yc');
+							$('.l_wxdh ul').first().addClass('dl_xs').siblings().addClass('dl_yc');
+							$('.l_wxdh ul.top_zc').removeClass("dl_yc");
+							$(".top_denglu").css({display:"none"});
+						} else {
+							$('#denglu div').first().addClass('dl_yc').siblings().addClass('dl_xs');
+							$('.l_wxdh ul').first().addClass('dl_yc').siblings().addClass('dl_xs');
+						}
+						$(".yhm_u").mouseover(function() {
+							$(".yhm_u .user_yh").css({
+								color: '#000'
+							});
+							$('.yhm_u .down_up').show();
+							$('.arrow_down').addClass('arrow_down02').removeClass("arrow_down01");
+						})
+						$(".yhm_u").mouseout(function() {
+							$(".yhm_u .user_yh").css({
+								color: '#fff'
+							});
+							$('.yhm_u .down_up').hide();
+							$('.arrow_down').addClass('arrow_down01').removeClass("arrow_down02");
+						})
+					}
+					denglu();
+					//导航栏部分
+					$(".nav_li").mouseover(function(){
+						$(this).find("b").css({
+							borderBottom: "7px solid #908E8E"
+						});
+						$(this).find("span").css({
+							borderTop: "7px solid #fff"
+						});
+						$(this).find("ul").show();
+						$(this).find("ul li").hover(function() {
+								$(this).find("em").stop().animate({
+									width: "100%"
+								}, 500);
+							},
+							function() {
+								$(this).find("em").stop().animate({
+									width: "80%"
+								}, 100);
+							}, 100)
+					})
+					$(".nav_li").mouseout(function() {
+						$(this).find("ul").hide();
+						$(this).find("span").css({
+							borderTop: "7px solid #908E8E"
+						});
+						$(this).find("b").css({
+							borderBottom: "7px solid #fff"
+						});
+					})
+				})
+
+				// 加入收藏 兼容360和IE6 
+				function addFavorite2() {
+					var url = window.location;
+					var title = document.title;
+					var ua = navigator.userAgent.toLowerCase();
+					if(ua.indexOf("360se") > -1) {
+						alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+					} else if(ua.indexOf("msie 8") > -1) {
+						window.external.AddToFavoritesBar(url, title); //IE8
+					} else if(document.all) {
+						try {
+							window.external.addFavorite(url, title);
+						} catch(e) {
+							alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+						}
+					} else if(window.sidebar) {
+						window.sidebar.addPanel(title, url, "");
+					} else {
+						alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+					}
+				}
+				/****实时数据滚动**/
+				
+				$(function(){
+					/**获取红点榜数据**/
+					$.ajax({
+						url:"__CONTROLLER__/reddotlist",
+						dataType: "json",
+						async: false,
+						success:function(data){
+							var arr = data;
+							for(var i = 0;i<arr.length;i++){
+								var list = '<li><ol><li>'+arr[i].id+'</li><li>'+arr[i].username+'</li><li>'+arr[i].amount+'</li></ol></li>';
+								$(".hdb_list ul").append(list);
+							}
+						}
+					});
+					/****获取投资数据***/
+					$.ajax({
+						url:"__CONTROLLER__/invest",
+						dataType:"json",
+						aysnc:false,
+						success:function(data){
+							for(var i= 0;i<data.length;i++){
+								var datai = data[i];
+								var list = '<li><span>'+datai.time+'</span><span>'+datai.phone+'</span><span>'+datai.money+'</span></li>';
+								$(".sssj_marquee ul").append(list);
+							}
+						}
+					});
+					//$(".hdb_ssj_btn").hide();
+					$(".hdb_sssj_right").hover(function(){
+						clearInterval(hdbAsssjT);
+						clearInterval(marqueeT);
+						$(".hdb_ssj_btn").show();
+					},function(){
+						hdbAsssjT = setInterval(function(){
+							hdbAsssj();
+							},10000);
+						$(".hdb_ssj_btn").hide();
+						marqueeT = setInterval("marquee($('.sssj_marquee'),20)",100);
+					},1000);
+					$(".hdb_ssj_btn").click(function(){
+						hdbAsssj();
+						clearInterval(hdbAsssjT);
+					});
+					var hdbAsssjT = setInterval('hdbAsssj();',10000);
+					var	marqueeT = setInterval("marquee($('.sssj_marquee'),20)",100);
+				});
+				/***实时数据和红点榜的切换***/
+				function hdbAsssj(){
+					$(".hdb_list,.sssj").toggle();
+				}
+				/****实时数据的自动滚动***/
+				function marquee(obj,step){
+					obj.find("ul").animate({marginTop:'-=1'},0,function(){
+						var s = Math.abs(parseInt($(this).css("margin-top")));
+						if(s>=step){
+							$(this).find("li").slice(0,1).appendTo($(this));
+							$(this).css("margin-top",0);
+						}
+					});
+				}
+				/***实时数据的添加**/
+				function sssjAppend(arr){
+					for(var i=0;i<arr.length;i++){
+						var dataI = arr[i];
+						console.log(dataI)
+						var $li = $('<li><span>'+dataI.time+'</span><span>'+dataI.investor+'</span><span>'+dataI.tzje+'</span></span></li>');
+						var $sssjMarqueeUl = $(".sssj_marquee ul");
+						$sssjMarqueeUl.append($li);
+					}
+				}
+				
+				/****h计划效果***/
+				$(".h_plan_right_ul li a").hover(function(){
+				$(this).stop().animate({marginTop: "-5px"}, 300);
+				$(this).find('.boxShadow').stop().animate({opacity:'1'},200);
+				},function(){
+				$(this).stop().animate({marginTop: "0px"}, 200);
+				$(this).find('.boxShadow').stop().animate({opacity:'0'},300);
+				});
+
+			</script>
+	</body>
+
+</html>

@@ -1,0 +1,504 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "微软雅黑";
+}
+.clear{clear:both;}
+html{
+	overflow:auto;
+}
+.mobile_hchange{
+	height:110px;
+}
+.register_h40{
+	height:40px;
+}
+.register_h25{
+	height:25px;
+}
+.register_h30{
+	height:30px;
+}
+.register_h60{
+	height:60px;
+	line-height:20px;
+}
+.register_h70{
+	height:70px;
+}
+.register_h110{
+	height:110px;
+}
+.register_h300{
+	height:300px;
+}
+.register_h325{
+	height:325px;
+}
+.register_yinying_bg{
+	position:relative;
+	top:0px;
+	left:598px;
+}
+#register_kj{
+	width:100%;
+	min-width:1020px;
+	background:#db3043 url(../img/img_login/zcbg.png) no-repeat center;
+	background-size:auto 100%;
+	height:698px;
+}
+.register_content{
+	width:1020px;
+	margin:0px auto;
+	border:0px solid black;
+	height:698px;
+	position:relative;
+	overflow:hidden;
+}
+.register_content_wrap{
+	width:5000px;
+	position:absolute;
+	margin-left:0px;
+}
+.register_content #register{
+	background:#ffffff;
+	width:375px;
+	margin-right:50px;
+	position:relative;
+	overflow: hidden;
+	margin-left:605px;
+}
+.register_content .register_hb{
+	height:405px;
+}
+.register_content .register_h01{
+	height:505px;
+}
+.register_content .register_h02{
+	height:505px;
+}
+/*字母验证码开始*/
+
+.register_phone_code {
+    display:none;
+    clear: both;
+    padding-top: 0;
+    height: 35px;
+    width: 230px;
+    }
+.cm_register_input {
+	margin-bottom:10px;
+	float: left;
+    width: 130px;
+    line-height: 32px;
+    position: relative;
+    height: 32px;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+.cm_register_input input {
+    display: block;
+    width: 116px;
+    color: #666;
+    line-height: 32px;
+    padding-left: 10px;
+    font-size: 13px;
+    outline: 0;
+    height: 32px;
+    border: 0;
+}
+.register_phone_code .register_img{
+    display: block;
+    float: right;
+    width: 90px;
+    height: 31px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+}   
+/*字母验证码结束*/
+.register_cellphone{
+	background:#ffffff;
+	width:375px;
+	height:405px;
+	float:left;
+	margin-right:50px;
+	position:relative;
+}
+.register_code{
+	background:#ffffff;
+	width:375px;
+	height:405px;
+	float:left;
+	margin-right:50px;
+	position:relative;
+}
+.register_user{
+	background:#ffffff;
+	width:375px;
+	height:405px;
+	float:left;
+	position:relative;
+}
+.register_content p.title{
+	padding:30px 35px 18px 35px;
+	height:12px;
+	border-bottom:1px solid #ededed;
+}
+.register_content p.title span.left{
+	float:left;
+	font-size: 16px;
+	color:#959292;
+}
+.register_content p.title span.right{
+	float:right;
+	font-size: 12px;
+	color:#8b8b8b;
+}
+.register_content p.title a{
+	color:#46c0ff;
+	font-weight: 200;
+	}
+
+.register_cellphone .info{
+	width:235px;
+	margin:0px auto;
+}
+.register_cellphone .info .picture_people{
+	text-align:center;
+}
+.register_cellphone .info .register_input_name{
+	width:230px;
+	height:35px;
+	text-indent:20px;
+	outline:1px solid #dadada;
+	border:0px;
+	}
+.register_cellphone .info .register_btn{
+	width:230px;
+	height:35px;
+	}
+.register_cellphone .info .register_btn a{
+	color:#fff;
+	width:230px;
+	height:35px;
+	text-align:center;
+	font-size:16px;
+	background:#e60012;
+	line-height:35px;
+	display:inline-block;
+}
+.register_cellphone .info .register_btn a:hover{
+	background:#da0314;
+	}
+/**验证码认证**/
+.register_code .info_voice{
+	width:235px;
+	margin:0px auto;
+	position:relative;
+}
+.register_code .info_voice .picture_people{
+	text-align:center;
+}
+.register_code .info_voice .info_voice_text{
+	color:#a1a0a0;
+	font-size:12px;
+	padding:0px 0px 17px 0px;
+}
+.register_code .info_voice .info_voice_wran{
+	position: absolute;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    top: 129px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    background: #f35366;
+    color: #fff;
+    display:none;
+}
+.register_code .info_voice .info_voice_text a{
+	color:#2cbaff;
+	
+}
+
+.register_code .info_voice .register_input_name{
+	width:230px;
+	height:35px;
+	text-indent:20px;
+	outline: 1px solid #dadada;
+	border:0px;
+	}
+.register_code .info_voice .info_voice_send{
+	color:#a1a0a0;
+	text-align:right;
+	padding:17px 0px 0px 0px;
+}
+.register_code .info_voice .info_voice_send .rsend{
+	display:none;
+	cursor: pointer;
+	color:#66c2fd;
+}
+.register_code .info_voice .info_voice_send i{
+	float: left;
+    font-style: normal;
+    color: red;
+}
+
+.register_code .info_voice .info_voice_send .time{
+	color:#66c2fd;
+	font-size:14px;
+	padding-right:5px;
+}
+.register_code .info_voice .register_btn{
+	width:230px;
+	height:35px;
+	}
+.register_code .info_voice .register_btn a{
+	color:#fff;
+	width:230px;
+	height:35px;
+	text-align:center;
+	font-size:16px;
+	background:#e60012;
+	line-height:35px;
+	display:inline-block;
+}
+.register_code .info_voice .register_btn a:hover{
+	background:#da0314;
+	}
+/***form验证部分***/
+.register_user .info_form{
+	width:235px;
+	margin:0px auto;
+}
+.register_user .info_form p{
+	position:relative;
+}
+.register_user .info_form p em{
+	width:22px;
+	height:22px;
+	position:absolute;
+	display:inline-block;
+	background:url(../img/img_login/form_icon.png) no-repeat;
+}
+.register_user .info_form p em.a{
+	background-position: -22px 0px;
+	top:2px;
+}
+.register_user .info_form p em.b{
+	background-position: 0px 0px;
+	top:3px;
+	left:2px;
+}
+.register_user .info_form p em.c{
+	background-position: -42px 2px;
+	right:20px;
+}
+.register_user .info_form input{
+	width:230px;
+	height:30px;
+	border:1px solid #dadada;
+	outline: 1px solid #dadada;
+	border:0px;
+	text-indent:30px;
+}
+.register_user .info_form span.btn_tgm{
+	cursor: pointer;
+	float:right;
+	position:relative;
+	z-index:1000;
+	padding:0px 18px 5px 0px;
+	color:#5bc5ff;
+}
+.register_user .info_form span i.xiala{
+	position: absolute;
+	right: 5px;
+    top: 3px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #5bc5ff;
+}
+.register_user .info_form p.tgm{
+	display: none;
+}
+.register_user .info_form p.tgm input{
+	text-indent:12px;
+}
+/**推荐人样式**/
+.register_user .info_form span.btn_tjr{
+	cursor: pointer;
+	float:right;
+	position:relative;
+	z-index:1000;
+	padding:0px 18px 5px 0px;
+	color:#5bc5ff;
+}
+.register_user .info_form span i.xiala{
+	position: absolute;
+	right: 5px;
+    top: 3px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #5bc5ff;
+}
+.register_user .info_form p.tjr{
+	display: none;
+}
+.register_user .info_form p.tjr input{
+	text-indent:12px;
+}
+/**推荐人样式结束**/
+.register_user .info_form .register_btn a{
+	color:#fff;
+	width:230px;
+	height:35px;
+	text-align:center;
+	font-size:16px;
+	background:#e60012;
+	line-height:35px;
+	display:inline-block;
+}
+.register_user .info_form .register_btn a:hover{
+	background:#da0314;
+	}
+	
+/***注册完成页面样式***/	
+#register_kj_finish{
+	width:100%;
+	min-width:1020px;
+	background:#db3043 url(../img/img_login/register_finish_bg.png) no-repeat center;
+	background-size:auto 100%;
+	height:698px;
+}
+.register_content_finish .register_finish_info{
+	width:340px;
+	height:240px;
+	margin:0px auto;
+	border:0px solid black;
+}
+.register_content_finish .register_finish_info .finish_tips{
+	color:#db3043;
+	font-size:30px;
+	background:url(../img/img_login/register_finish_icon.png) no-repeat left center;
+	text-indent:80px;
+	height:65px;
+	line-height:65px;
+	margin-left:20px;
+}
+.register_content_finish .register_finish_info .finish_text{
+	text-align:center;
+	font-size:14px;
+}
+.register_content_finish .register_finish_info .finish_text a{
+	color:#3579cd;
+}
+.register_content_finish .register_finish_info .back_homepage{
+	width:125px;
+	height:45px;
+	margin:0px auto;
+	}
+.register_content_finish .register_finish_info .back_homepage a{
+	color:#fff;
+	display:inline-block;
+	width:125px;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	background:#41a3ed;
+	font-size:18px;
+	border-radius: 3px;
+}
+.register_content_finish .register_finish_info .back_homepage a:hover{
+	background:#309beb;
+}
+/**提示信息样式**/
+
+span.register_tips{
+	color:red;
+	margin:10px 0px 10px 0px;
+	display:inline-block;
+}
+.register_username_tips{
+	color:red;
+	margin:10px 0px 0px 0px;
+	display:inline-block;
+	font-style:normal;
+}
+.yellow-border-input{border: 1px solid #CAAB19;}
+.red-border-input{border: 1px solid #ff0000;}
+
+/**手机端注册页面样式**/
+#mobile_register_kj{
+	display:block;
+	background:#db3043;
+	background-size:auto 100%;
+	max-width: 640px;
+    margin: 0 auto;
+    height:100%;
+}
+.mobile_register_content{
+	width:100%;
+	margin:0px auto;
+	border:0px solid black;
+	position:relative;
+	overflow:hidden;
+}
+.mobile_register_content_wrap{
+	width:5000px;
+	position:absolute;
+	margin-left:0px;
+}
+.mobile_register_content #mobile_register{
+	background:#ffffff;
+	width: 286px;
+    height: 286px;
+	margin-right:50px;
+	position:relative;
+	overflow: hidden;
+	margin:0px auto;
+}
+.mobile_register_content p.title{
+	padding:6px 35px 6px 29px;
+	margin-bottom:5px;
+	height:12px;
+}
+.mobile_register_content p.title span.left{
+	float:left;
+	font-size: 16px;
+	color:#959292;
+}
+.mobile_register_content p.title span.right{
+	float:right;
+	font-size: 12px;
+	color:#8b8b8b;
+}
+.mobile_register_content p.title a{
+	color:#46c0ff;
+	font-weight: 200;
+	}
+.mobile_register_yinying_bg{
+	position:relative;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	display:block;
+	width:307px;
+}
+.mobile_register_content .register_cellphone{
+	width: 286px;
+    height: 361px;
+}
+.mobile_register_content .register_user{
+	width: 286px;
+    height: 361px;
+}
+.mobile_register_content .register_code{
+	width: 286px;
+    height: 361px;
+    }

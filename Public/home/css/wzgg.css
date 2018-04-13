@@ -1,0 +1,35 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+}
+.wzgg_content{
+	width:593px;
+	padding:20px;
+	border:1px solid #E0E0E0;
+	margin:0px auto;
+}
+.wzgg_content p.title{
+	text-align:center;
+	border-bottom:1px solid #DDDDDD;
+	padding:10px 0px;
+	font-size:16px;
+}
+.wzgg_content p{
+	line-height:30px;
+	}
+.text_indent{
+	text-indent:25px;
+}
+.text_r{
+	text-align:right;
+	margin-right:10px;
+}	
+.sjx span{
+	display:block;
+	width:0px;
+	height:0px;
+	border-top:5px transparent solid;
+	border-bottom:5px solid transparent;
+	border-right:7px solid #000;
+}

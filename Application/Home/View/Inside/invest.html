@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我要理财</title>
+		<link rel="stylesheet" href="__PUBLIC__/home/css/reset.css" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/sbtz_style.css" />
+		<link rel="stylesheet" href="__PUBLIC__/home/css/headf.css" />
+		<script src="__PUBLIC__/home/js/jquery.min.js"></script>
+	</head>
+	<body class="bg_color_gray">
+		<div id="header">
+			<include file="Pub/header"/>
+		</div>
+		<div class="banner_sbtz"><!--banner--></div>
+		<div class="sbtz_wrap">
+			<ul class="menu_dh">
+				<li><a href="javascript:;">首页</a>></li>
+				<li><a href="javascript:;">我要投资</a>></li>
+				<li><a href="javascript:;">红点宝</a></li>
+			</ul>
+			<div class="hdb_choose_box">
+				<div class="xmlx gray_border_dash">
+					<span>项目期限：</span>
+					<a href="javascript:;" class="click_bg_gray" data>不限</a>
+					<a href="javascript:;" class="click_bg_gray" data="3">3个月以下</a>
+					<a href="javascript:;" class="click_bg_gray" data="3-6">3-6个月</a>
+					<a href="javascript:;" class="click_bg_gray" data="6-12">6-12个月</a>
+					<a href="javascript:;" class="click_bg_gray" data="12-24">12-24个月</a>
+					<a href="javascript:;" class="click_bg_gray" data="24">24个月以上</a>
+				</div>
+				<div class="nsyl gray_border_dash">
+					<span>年收益率：</span>
+					<a href="javascript:;" class="click_bg_gray" data>不限</a>
+					<a href="javascript:;" class="click_bg_gray" data="10%">10%以下</a>
+					<a href="javascript:;" class="click_bg_gray" data="10%-12%">10%-12%</a>
+					<a href="javascript:;" class="click_bg_gray" data="12%-15%">12%-15%</a>
+				</div>
+				<div class="xmzt">
+					<span>项目状态：</span>
+					<a href="javascript:;" class="click_bg_gray">不限</a>
+					<a href="javascript:;" class="click_bg_gray">投标中</a>
+					<a href="javascript:;" class="click_bg_gray">投标完成</a>
+					<a href="javascript:;" class="click_bg_gray">还款完成</a>
+				</div>
+			</div>
+			<div class="sbtz_show_table">
+				<ul class="table_head">
+					<li style="width:120px;height:1px;"></li>
+					<li style="width:97px;">项目名称</li>
+					<li style="width:98px;">信用等级</li>
+					<li style="width:106px;">预期年收益率</li>
+					<li style="width:129px;">金额（元）</li>
+					<li style="width:86px;">期限（月）</li>
+					<li style="width:210px;">进度</li>
+					<li style="width:163px;">操作</li>
+					<div class="clear"></div>
+				</ul>
+				<!--
+                	页面的循环遍历
+				<foreach name="data" item="vo" key="k">
+					<ul class="table_body">
+						<li class="ta_center li_width131"><span class="jian">荐</span><span class="wen">稳</span></li>
+						<li class="ta_center li_width90">{<$vo.pname>}</li>
+						<li style="padding:12px 19px;" class="ta_center li_width77"><span class="zmA">{<$vo.credit>}</span></li>
+						<li class="ta_center li_width108">{<$vo.yield>}%</li>
+						<li class="ta_center li_width105">{<$vo.amount>}<span class="font-size12">元</span></li>
+						<li class="ta_center li_width116">{<$vo.tlimit>}个月</li>
+						<li class="ta_center li_width240"><div class="jdt_1 jdt"><p><span w={<$vo.progress>}></span><b></b></p><i class="a">{<$vo.progress>}%</i></li>
+						<li class="ta_center li_width90"><a href="javascript:;" class="btn_tb">{<$vo.operation>}</a></li>
+						<div class="clear"></div>
+					</ul>
+				</foreach>
+				-->
+				<script>
+					$(function(){
+						var tbody = "";
+						$.ajax({
+							type:"post",
+							dataType:"json",
+							async:false,
+							url:"__CONTROLLER__/invest",
+							success:function(data){
+								console.log(data);
+							}
+						})
+					})
+				</script>
+				 <div class="fenye">
+					<ul style="width:249px;">
+						<li class="bg_color_eee li_width60 ta_center">首页</li>
+						<li class="bg_color_eee li_width30 ta_center">&larr;</li>
+						<li class="bg_color_red li_width30 ta_center">1</li>
+						<li class="bg_color_eee li_width30 ta_center">&rarr;</li>
+						<li class="bg_color_eee li_width60 ta_center">末页</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<include file="Pub/footer"/>
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		//进度条
+		 animate();
+		//点击xmqx
+		clickChoose($(".sbtz_wrap .xmlx a"));
+		//点击nsyl
+		clickChoose($(".sbtz_wrap .nsyl a"));
+		//点击xmzt
+		clickChoose($(".sbtz_wrap .xmzt a"));
+	});
+	function clickChoose(className){
+		className.click(function(){
+			$(this).addClass("click_bg_red").siblings().removeClass("click_bg_red");
+			var term = $(this).attr("data");
+		});
+	}
+	function animate(){
+ 		$(".jdt_1 span").each(function(i, item) {
+				var a = parseInt($(item).attr("w"));
+				if(0 <= a <= 2) {
+					$(".jdt_1 p b").css({
+						marginLeft: 0 + "px"
+					});
+				}
+
+				if(2 < a < 4) {
+					$(".jdt_1 p b").css({
+						marginLeft: "-2px"
+					});
+				}
+				var jdtW = 138 * (a / 100);
+				$(item).animate({
+					width: jdtW + "px"
+				}, 1000);
+		});
+	}
+	$(function() {
+		//判断登录框是否显示隐藏
+		function denglu() {
+			var a = 1;
+			if(a == 1) {
+				$('#denglu div').first().addClass('dl_xs').siblings().addClass('dl_yc');
+				$('.l_wxdh ul').first().addClass('dl_xs').siblings().addClass('dl_yc');
+				$('.l_wxdh ul.top_zc').removeClass("dl_yc");
+				$(".top_denglu").css({display:"none"});
+			} else {
+				$('#denglu div').first().addClass('dl_yc').siblings().addClass('dl_xs');
+				$('.l_wxdh ul').first().addClass('dl_yc').siblings().addClass('dl_xs');
+			}
+			$(".yhm_u").mouseover(function() {
+				$(".yhm_u .user_yh").css({
+					color: '#000'
+				});
+				$('.yhm_u .down_up').show();
+				$('.arrow_down').addClass('arrow_down02').removeClass("arrow_down01");
+			})
+			$(".yhm_u").mouseout(function() {
+				$(".yhm_u .user_yh").css({
+					color: '#fff'
+				});
+				$('.yhm_u .down_up').hide();
+				$('.arrow_down').addClass('arrow_down01').removeClass("arrow_down02");
+			})
+		}
+		denglu();
+		//导航栏部分
+		$(".nav_li").mouseover(function(){
+			$(this).find("b").css({
+				borderBottom: "7px solid #908E8E"
+			});
+			$(this).find("span").css({
+				borderTop: "7px solid #fff"
+			});
+			$(this).find("ul").show();
+			$(this).find("ul li").hover(function() {
+					$(this).find("em").stop().animate({
+						width: "100%"
+					}, 500);
+				},
+				function() {
+					$(this).find("em").stop().animate({
+						width: "80%"
+					}, 100);
+				}, 100)
+		})
+		$(".nav_li").mouseout(function() {
+			$(this).find("ul").hide();
+			$(this).find("span").css({
+				borderTop: "7px solid #908E8E"
+			});
+			$(this).find("b").css({
+				borderBottom: "7px solid #fff"
+			});
+		})
+	})
+	</script>
+</html>

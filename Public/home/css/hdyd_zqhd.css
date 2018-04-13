@@ -1,0 +1,54 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.zqhd_wrap{
+	height:3108px;
+	min-width:1020px;
+	width:100%;
+	background:url(../img/hdyd_zqhd/zqhd_bj.png) no-repeat center;
+	background-size:auto 100%;
+	overflow: hidden;
+	position:relative;
+	z-index:10;
+}
+.zqhd_head{
+	height:601px;
+	width:826px;
+	margin:0 auto;
+	background:url(../img/hdyd_zqhd/zqhd_top.png) no-repeat center;
+	background-size:auto 100%;
+	overflow: hidden;
+	
+}
+.zqhd_wrap .zqhd_content{
+	background:url(../img/hdyd_zqhd/zqhd_hdnr.png) no-repeat center;
+	background-size:100% 100%;
+	width:826px;
+	height:409px;
+	margin:0 auto;
+	position:relative;
+	z-index: 2px;
+	overflow: hidden;
+}
+.zqhd_wrap .jlfs{
+	background: url(../img/hdyd_zqhd/zqhd_jlfs.jpg) no-repeat -18px 0px;
+    background-size: 100% 100%;
+    width: 1294px;
+    height: 320px;
+    position:relative;
+    margin: 0 auto;
+    z-index: 1px;
+    overflow: hidden;
+}
+.zqhd_wrap .jlfs_xx{
+	background: url(../img/hdyd_zqhd/zqhd_jpxx.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+    width: 824px;
+    height: 824px;
+    position:relative;
+    margin: 0 auto;
+    z-index: 1px;
+    overflow: hidden;
+}

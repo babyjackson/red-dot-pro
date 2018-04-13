@@ -1,0 +1,369 @@
+
+*{
+	margin:0px;
+	padding:0px;
+	font-family: "微软雅黑";
+}
+a:hover{
+	text-decoration: none;
+}
+.clear{clear:both;}
+.h_plan_all{
+	width:100%;
+	min-width: 1020px;
+	background:#f7f7f7;
+	padding:30px 0px;
+}
+.h_plan_all .h_plan_wrap{
+	width:1020px;
+	margin:0px auto;
+}
+.wen{
+	display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    background: #f3943e;
+    color: #fff;
+    font-size: 16px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.jian{
+	display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    background: #f74c38;
+    color: #fff;
+    font-size: 16px;
+}
+.h_plan_section{
+	width:665px;
+	background:#fff;
+	float:left;
+}
+h3{
+	font-size: 15px;
+	color:#313131;
+}
+.h_plan_title_all{
+	margin:0px 16px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.h_plan_title_all h3{
+	padding:15px 10px;
+	position:relative;
+	border-bottom: 2px solid #e9625e;
+	width:80px;
+	top:1px;
+}
+.h_plan_section .dzht{
+	padding:25px 25px;
+
+}
+.all_fs18{
+	font-size:18px;
+}
+.all_fs14{
+	font-size:14px;
+}
+.all_color_r{
+	color:#e9625e;
+}
+
+.all_color_b{
+	color:#2b2a2a;
+}
+.h_plan_section .sz_sy{
+	padding:0px 25px;
+	color:#959595;
+}
+.h_plan_section .sz_sy li{
+	float:left;
+	line-height: 20px;
+}
+.h_plan_section .down{
+	padding:20px 25px;
+	color:#959595;
+}
+.h_plan_section .down li{
+	width:300px;
+	float:left;
+	height:35px;
+	line-height: 35px;
+}
+.li_width200{
+	width:200px;
+}
+.li_width160{
+	width:160px;
+	
+}
+.li_width240{
+	width:240px;
+}
+
+.tzje_section{
+	background:#fff;
+	width:345px;
+	float:right;
+	padding-bottom: 14px;
+}
+.tzje_section .tzje_info{
+	padding:3px 25px;
+	color:#959595;
+}
+.tzje_section .tzje_info .jdt{
+	padding:15px 0px;
+}
+/*进度条样式*/
+.jdt{
+	position:relative;
+	width:193px;
+	float:left;
+}
+.jdt p{
+	width:150px;
+	background:url(../img/jdtbg.png) left center no-repeat;
+	height:18px;
+	overflow:hidden;
+	line-height:18px;
+	position:relative;
+}
+.jdt i{
+	position:absolute;
+	right:0px;
+	color:#959595;
+	font-size:12px;
+	top:20px;
+	font-style: normal;
+	top:15px;
+}
+.jdt p span{
+	width:0px;
+	max-width:140px;
+	height:10px;
+	overflow:hidden;
+	background:url(../img/barjdtbg.png) no-repeat;
+	border-radius:8px 0px 0px 8px;
+	display:block;
+	float:left;
+	margin-top:4px;
+	margin-left:2px;
+	}
+.jdt p b{
+	float:left;
+	width:10px;
+	height:10px;
+	border:1px solid #fdb784;
+	border-radius:50%;
+	margin-top:3px;
+	margin-left:-4px;
+	background:#fff;
+}
+
+/*进度条样式结束*/
+.tzjd{
+	display:block;
+	float:left;
+	width:70px;
+	padding:18px 0px;
+}
+.all_marginL10{
+	margin-left:10px;
+}
+
+.tzje_section .srtzje{
+	padding:25px 0px 12px 0px;
+}
+.tzje_section .srtzje .tzjeValue{
+	width:154px;
+	height:30px;
+	border:1px solid #d8d7d8;
+	float:right;
+	margin-right:52px;
+	position:relative;
+	top:-10px;
+}
+.tzje_section .srtzje .tzjeValue input{
+	width:154px;
+	height:30px;
+	border:0;
+	
+}
+.tzje_section .srtzje .text{
+	text-align: right;
+	width:251px;
+	color:#e9625e;
+}
+.tzje_section .checked{
+	padding:0px 0px 15px 0px;
+}
+.tzje_section .h_plan_btn{
+	width:253px;
+	height:35px;
+	border-radius: 3px;
+	display:block;
+	text-align: center;
+	margin: 0px auto;
+	background:#e9625e;
+	font-size:16px;
+	color:#fff;
+	line-height:35px;
+}
+.tzje_section a.h_plan_btn:hover{
+	background:#d04d49;
+}
+.pro_details{
+	margin-top:20px;
+	background:#fff;
+	padding:15px 20px;
+}
+.pro_details ul.project_title{
+	border-bottom: 2px solid #dcdcdc;
+	font-size: 14px;
+}
+.pro_details ul.project_title li.jhjs,li.jrjl{
+	padding:15px;
+	float:left;
+	cursor: pointer;
+	margin-right:20px;
+	position: relative;
+	top:2px;
+}
+.pro_details ul.project_title li:hover{
+	border-bottom: 2px solid #e86763;
+	color:#e86763;
+}
+.pro_bt_on{
+	border-bottom: 2px solid #e86763;
+	color:#e86763;
+}
+.pro_bt_leave{
+	border-bottom: 2px solid #dcdcdc;
+	color:#454545;
+}
+.title_all2{
+	padding:15px 0px;
+	font-size: 15px;
+}
+.title_all2 span{
+	display: inline-block;
+	width:5px;
+	height:15px;
+	background:#e86763;
+	margin-right: 10px;
+	position: relative;
+	top:2px;
+}
+
+.pro_details_content{
+	min-height:260px;
+}
+.tzjl_section .tzjl_table{
+	width:945px;
+	margin:0px auto;
+	min-height: 300px;
+} 
+.tzjl_section .tzjl_table table{
+	width:945px;
+	text-align: center;
+}
+.tzjl_section .tzjl_table table th{
+	background:#d8d7d8;
+	height:40px;
+}
+.tzjl_section .tzjl_table table td{
+	color:#565656;
+	font-size:14px;
+	height:30px;
+}
+.h_plan_progress{
+	height:100px;
+	padding: 20px;
+	width:980px;
+	background: #fff;
+	margin: 20px 0;
+}
+.cl{
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float:right;
+}
+.h_plan_progress .h_progress_div{
+	width: 125px;
+	text-align: center;
+}
+.h_plan_progress .h_progress_list{
+	width: 800px;
+	padding: 10px 0px;
+}
+.h_plan_progress .h_progress_list li{
+	width: 200px;
+	position: relative;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+}
+.h_plan_progress .h_progress_list li .progress_img{
+	text-align: center;
+}
+.h_plan_progress .h_progress_list li .alt_orange{
+	position: absolute;
+    right: -13px;
+    top: 31px;
+    font-size: 30px;
+    color: #f69e7e;
+}
+.title_all2 p{
+	display: inline-block;
+	}
+.title_all2 p.u_mc{
+	width: 192px;
+	color: #767676;
+	font-size: 14px;
+	text-indent: 110px;
+}
+.title_all2 p.u_s_mc{
+	width: 760px;
+}
+.h_plan_intro_text{
+	width: 100%;
+	
+}
+
+.h_plan_intro_text li .left_mc{
+	height: 100%;
+	width: 172px;
+	
+	display: table;
+	font-size: 15px;
+	color: #767676;
+	text-align: right;
+	padding: 20px 20px 20px 0px;
+}
+.h_plan_intro_text li .right_nr{
+	width: 749px;
+	padding: 15px 0px 15px 20px;
+	border-left: 1px solid #fff;
+}
+.h_plan_intro_text li .right_nr p{
+	line-height: 25px;
+    color: #150909;
+    font-size: 14px;
+}
+.h_plan_intro_text li .right_nr p a{
+	color: #c57451;
+}
+.fefafa{
+	background: #fefafa;
+}

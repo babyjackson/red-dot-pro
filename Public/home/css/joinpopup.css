@@ -1,0 +1,107 @@
+.confirm_join_mask_warp{
+	position: fixed;
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+	top:0;
+	height: 100%;
+}
+.confirm_join_mask_warp .confirm_join_mask{
+	width: 600px;
+	height:630px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	box-shadow: 0 0 2px 1px #999;
+}
+.confirm_join_mask_warp .confirm_join_mask .caption{
+	height: 45px;
+	line-height: 45px;
+	background: #F3F3F3;
+	color: #656565;
+	font-size: 18px;
+	text-indent: 25px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper{
+	padding: 25px 45px 0px 45px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper li{
+	width: 100%;
+	line-height: 30px;
+	padding-bottom:5px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper li span{
+	display: inline-block;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper li span.fl{
+	width: 30%;
+	font-size: 14px;
+	color: #8a8e8f;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper li span.fr{
+	width: 65%;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper select.income_opt{
+	width: 215px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 2px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper select.discount_opt{
+	width: 230px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 2px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper .discount{color: #8d8d8d;}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper li span.yfje{
+	color: #fd7344;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_upper li span.yfje b{
+	font-size: 21px;
+	font-weight: 200;
+}
+.confirm_join_mask_warp .confirm_join_mask .agreement{
+	line-height: 20px;
+	text-indent: 45px;
+}
+.confirm_join_mask_warp .confirm_join_mask .agreement a{
+	color: #5380c3;
+	
+}
+.confirm_join_mask_warp .confirm_join_mask .conf_cancel{
+	padding: 0px 45px;
+	text-align: center;
+}
+.confirm_join_mask_warp .confirm_join_mask .conf_cancel a{
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin: 20px 0px;
+	border-radius: 3px;
+	
+}
+.confirm_join_mask_warp .confirm_join_mask .conf_cancel a.confirm{
+	color: #fff;
+	background: #e9625e;
+	margin-right: 20px;
+}
+.confirm_join_mask_warp .confirm_join_mask .conf_cancel a.cancel{
+	color: #333;
+	background: #e5e5e5;
+	margin-left: 20px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_tips{
+	background: #fafafa;
+	border-top:1px solid #f5f5f5;
+	height: 153px;
+	padding: 0px 45px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_tips h6{
+	padding: 10px 0px;
+}
+.confirm_join_mask_warp .confirm_join_mask .join_info_tips p{
+	line-height: 20px;
+	
+}

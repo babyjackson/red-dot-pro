@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" href="__PUBLIC__/home/css/reset.css"/>
+		<link rel="stylesheet" href="__PUBLIC__/home/css/style.css"/>
+		<script>
+			Public = "__PUBLIC__";
+		</script>
+		<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/rjpcj.css" />
+		<script type="text/javascript" src="__PUBLIC__/home/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/home/js/rjpcj.js"></script>
+	</head>
+	<script type="text/javascript"> 
+	$(function(){
+		$("#mainbody").keypress(function (e) {
+        if (e.keyCode == "13") {
+            $("#txtUserAll").blur();
+            $("#txtPassword").blur();
+            $("#imgCode").blur();
+            //var listdialog = art.dialog.list;
+            //for (var i in listdialog) {
+            //    listdialog[i].close();
+            //}
+            LoginSubmin();
+        }
+    	});
+	$("#txtUserAll").focus(function () {
+        $(this).addClass("yellow-border-input");
+		}).blur(function(){
+		$(this).removeClass("yellow-border-input");
+		});
+	$("#txtPassword").focus(function () {
+        $(this).addClass("yellow-border-input");
+		}).blur(function(){
+		$(this).removeClass("yellow-border-input");
+		});
+		//页面登录颠沛流离
+	function LoginSubmin(){
+		var userName=$('#txtUserAll').val();
+		var password = $("#txtPassword").val();
+		var yzm=$("#imgCode").val();
+		if(userName==""||userName=="用户名/手机号"){
+		$(".tips").html("<i class='tip-icon icons'></i>请输入账户名");
+        $(".tips").css("visibility", "visible");
+		$("#txtUserAll").click().focus();
+		$("#txtUserAll").addClass("red-border-input").removeClass("yellow-border-input");
+		return;
+		}
+		if (password == ""){
+        $(".tips").html("<i class='tip-icon icons'></i>请输入密码");
+        $(".tips").css("visibility", "visible");
+        $("#txtPassword").click().focus();
+		$("#txtPassword").addClass("red-border-input").removeClass("yellow-border-input");
+        return;
+    	}	
+		function f_yzm(){
+		if(yzm.length<4){
+				$(".tips").html("<i class='tip-icon icons'></i>请正确输入验证码");
+				$(".tips").css("visibility", "visible");
+				$("#imgCode").click().focus();
+				$("#imgCode").addClass("red-border-input").removeClass("yellow-border-input");
+				return;
+				}
+		}
+		if(password!=""&&userName!=""){
+			//ajax
+			$.ajax({
+				type:"get",
+				url:"__CONTROLLER__/login_do",
+				dataType:"json",
+				data:{password:password,username:userName},
+				async:true,
+				success:function(data){
+					if(data.status){
+						setTimeout(function(){
+							location.href="{<:U('Home/Index/index')>}";
+						},1000)
+					}
+				}
+			});
+		}
+		$(".tips").css("visibility", "hidden");
+		//记住密码
+		var isRember = false;
+		if ($("#cbRememberMe").attr("checked") == "checked") {
+        isRember = true;
+		}
+	}
+	 
+	$("#btnSign").click(function(){
+		LoginSubmin();
+	});
+	
+	var h_t=$(window).height();
+	console.log(h_t);
+	if(h_t>620){
+	$('#footer').css({marginTop:h_t-70+'px'});	
+	}
+	
+	});
+		
+    
+	</script>
+	<body>
+		<div id="header">
+			<div class="head">
+				<div class="wrap_l">
+					<a href="http://www.hongdianyidai.com"></a>	
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div id="mainbody">
+			<div class="content">
+			<div class="wrap_left">
+				<img src="__PUBLIC__/home/img/content_left.png"/>
+			</div>
+			<div class="wrap_right">
+                <div id="login_dl">
+                    <div class="body">
+                        <div class="text"><span>还没有账号？ <a class="reg-btn" href="http://www.hongdianyidai.com/p2p/register1.action">立即注册</a></span>登录  </div>
+                        <div class="tips"><i class="tip-icon icons"></i>请输入账户名</div>
+                        <div class="form">
+						<form>
+                            <p class="user_name">
+                                <input class="input-text" type="text" onpaste="return false" oncontextmenu="return false" oncopy="return false" oncut="return false" name="txtUser" id="txtUserAll" placeholder="用户名/手机号">
+                            </p>
+                            <p class="pass_word">
+                                <input class="input-text keyboard" placeholder="密码" type="password" oncontextmenu="return false" name="txtPwd testfild" id="txtPassword" value="">
+                                <script>
+									$(function(){
+									$('.keyboard').keyboard({
+									lang:'en'
+									});
+									})
+								</script>
+							</p>
+                            <p class="yzm_s">
+								<input style="background-position: 0 -67px;width: 98px;" name="图形验证码" id="imgCode" type="text" maxlength="4" placeholder="图形验证码">
+								<span><img src="__PUBLIC__/home/img/yanzhenma.jpg"/></span>
+								<div class="clear">
+							<p>
+						</form>	
+                        </div>
+                        <div class="mark">
+                            <a href="">忘记密码？</a>
+                            
+                            <label id="rememberme">
+                                <i class="mark-icon icons" id="markChb"><input type="checkbox" id="cbRememberMe" name="rememberme"></i>记住账号
+							</label>
+                        </div>
+                        <a href="javascript:;" id="btnSign" class="login-btn">登录</a>
+                    </div>
+                </div>
+            </div>
+			
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>	
+		<div id="footer">
+			<p>Copyright © 2016 江苏红点惠中投资管理有限公司<a href="">苏ICP 证 B2-20160144号</a><a href="">苏ICP 备 15040511号</a></p>
+		</div>
+	</body>
+	
+</html>
